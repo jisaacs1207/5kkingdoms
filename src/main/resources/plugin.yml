@@ -1,0 +1,12 @@
+name: 5KKingdoms
+main: io.github.jisaacs1207.kingdoms5k.Kingdoms5k
+version: 1.0
+author: jisaacs1207
+website: http://fivekingdoms.net
+depend: [Vault,WorldGuard,WorldEdit]
+description: >
+             Adds Kingdom Functionality!
+
+commands:
+   kingdom:
+      description: Checks the current kingdom you are in and perks.
