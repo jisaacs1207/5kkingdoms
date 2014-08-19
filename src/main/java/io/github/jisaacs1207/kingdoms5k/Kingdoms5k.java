@@ -64,11 +64,10 @@ public final class Kingdoms5k extends JavaPlugin implements Listener{
 		if(lightLight==true){
 			player.setMaxHealth(30);
 			if (Math.random() * 100 >= 99.2){
-				player.setHealth(player.getHealth()+1);
-				
+				if(player.getHealth()<30)player.setHealth(player.getHealth()+1);
 			}
 			if (Math.random() * 100 >= 99.2){
-				player.setFoodLevel(player.getFoodLevel()+1);
+				if(player.getFoodLevel()<30)player.setFoodLevel(player.getFoodLevel()+1);
 			}
 		}
 		if(lightLight==false)player.setMaxHealth(20);
