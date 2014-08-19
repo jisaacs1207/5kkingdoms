@@ -83,13 +83,15 @@ public final class Kingdoms5k extends JavaPlugin implements Listener{
 		// Magic
 		if(magicVis==true){
 			if(player.isSprinting()){
-				for (Player victims : Bukkit.getOnlinePlayers()){
-					if(victims.canSee(player)){
-						if(!victims.isOp()&&!victims.hasPermission("5k.admin")){
-							victims.hidePlayer(player);
+				if(player.getHealth()>=20){
+					for (Player victims : Bukkit.getOnlinePlayers()){
+						if(victims.canSee(player)){
+							if(!victims.isOp()&&!victims.hasPermission("5k.admin")){
+								victims.hidePlayer(player);
+							}
 						}
 					}
-				}
+				}		
 			}
 			else{
 				for (Player victims : Bukkit.getOnlinePlayers()){
